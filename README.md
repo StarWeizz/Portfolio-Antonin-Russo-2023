@@ -11,7 +11,6 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
 - [Vue.js](https://vuejs.org/) - Framework JavaScript progressif
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitaire
 - [Vite](https://vitejs.dev/) - Outil de développement rapide pour Vue.js
-- [GitHub Pages](https://pages.github.com/) - Hébergement du portfolio
 
 ## Fonctionnalités
 
@@ -35,3 +34,29 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
     cd votre-portfolio
     npm install
     ```
+
+3. Démarrez l'application en mode de développement :
+
+    ```
+    npm run dev
+    ```
+
+4. Ouvrez votre navigateur et accédez à l'URL suivante :
+
+    ```
+    http://localhost:5173
+    ```
+## Contribution
+
+Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou à proposer une pull request.
+
+## Contact
+
+Pour me contacter, vous pouvez utiliser le formulaire de contact sur mon site web ou me suivre sur les réseaux sociaux :
+
+- [Instagram]()
+- [LinkedIn]()
+
+N'hésitez pas à explorer mon portfolio et à me faire part de vos commentaires ou suggestions !
+
+Merci de votre visite !
