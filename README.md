@@ -14,11 +14,11 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
 
 ## Fonctionnalités
 
-- Présentation de mes compétences techniques.
+- Présentation de qui suis-je.
 - Affichage de mes projets récents avec des descriptions détaillées.
 - Informations sur mon parcours académique et professionnel.
-- Formulaire de contact pour me contacter directement.
 - Intégration avec les réseaux sociaux pour me suivre.
+- Les technologies et outils que j'utilise.
 
 ## Comment exécuter localement
 
