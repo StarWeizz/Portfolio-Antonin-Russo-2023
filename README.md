@@ -46,6 +46,17 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
     ```
     http://localhost:5173
     ```
+
+## Construire le projet 
+
+1. Exécutez la commande pour créer les fichiers de production :
+
+    ```
+    npm run build
+    ```
+
+Vous y êtes ! Rendez-vous dans le dossier dist/ !
+
 ## Contribution
 
 Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou à proposer une pull request.
