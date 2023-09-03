@@ -25,13 +25,13 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
 1. Clônez ce dépôt sur votre machine :
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-portfolio.git
+   git clone https://github.com/StarWeizz/Portfolio-Antonin-Russo-2023.git
    ```
 
 2. Installez les dépendances nécessaires : 
 
     ```
-    cd votre-portfolio
+    cd Portfolio-Antonin-Russo-2023
     npm install
     ```
 
