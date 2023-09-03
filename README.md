@@ -1,29 +1,37 @@
-# Portfolio Antonin Russo 2023
+# Portfolio d'Antonin Russo
 
-This template should help get you started developing with Vue 3 in Vite.
+Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite en 2023. Ce portfolio me présente en disant qui je suis, les technologies et outils que j'utilise au quotidien, mes différents projets que j'ai réalisé ainsi que mon parcours professionnel et scolaire.
 
-## Recommended IDE Setup
+## Aperçu
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Capture d'écran du portfolio](lien_vers_capture_d_ecran.png)
 
-## Customize configuration
+## Technologies utilisées
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [Vue.js](https://vuejs.org/) - Framework JavaScript progressif
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitaire
+- [Vite](https://vitejs.dev/) - Outil de développement rapide pour Vue.js
+- [GitHub Pages](https://pages.github.com/) - Hébergement du portfolio
 
-## Project Setup
+## Fonctionnalités
 
-```sh
-npm install
-```
+- Présentation de mes compétences techniques.
+- Affichage de mes projets récents avec des descriptions détaillées.
+- Informations sur mon parcours académique et professionnel.
+- Formulaire de contact pour me contacter directement.
+- Intégration avec les réseaux sociaux pour me suivre.
 
-### Compile and Hot-Reload for Development
+## Comment exécuter localement
 
-```sh
-npm run dev
-```
+1. Clônez ce dépôt sur votre machine :
 
-### Compile and Minify for Production
+   ```bash
+   git clone https://github.com/votre-utilisateur/votre-portfolio.git
+   ```
 
-```sh
-npm run build
-```
+2. Installez les dépendances nécessaires : 
+
+    ```
+    cd votre-portfolio
+    npm install
+    ```
