@@ -17,6 +17,7 @@ export default {
       neutral: colors.slate,
       
       white: colors.white,
+      rose: colors.rose,
     },
     screens: {
       'xs': '475px',

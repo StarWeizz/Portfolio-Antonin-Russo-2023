@@ -3,11 +3,11 @@
     import IconInstagram from "./icons/IconInstagram.vue";
 
     const socialLinks = [{
-            link: "#",
+            link: "https://instagram.com/r.antonin.pro",
             icon: IconInstagram
         },
         {
-            link: "#",
+            link: "https://linkedin.com/in/antonin-russo-33096626b",
             icon: IconLinkedIn
         },
     ];
@@ -20,7 +20,7 @@
                 RUSSO
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a v-for="(social, index) in socialLinks" :ket="index" :href="social.link" class="ml-3 text-neutral-800">
+                <a v-for="(social, index) in socialLinks" :ket="index" :href="social.link" target="_blank" class="ml-3 text-neutral-800">
                     <component :is="social.icon" /></a>
             </span>
         </div>

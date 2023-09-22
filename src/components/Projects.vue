@@ -2,12 +2,19 @@
     import Tag from './partials/Tag.vue';
     import Heading from './partials/Heading.vue';
 
+    import imgPortfolio from '../assets/img/portfolio_ar_2023.png';
+    import imgCroqueMilhoc from '../assets/img/croquemilhoc_2023.png';
+    import imgSIVIBE from '../assets/img/sivibe_2023.png';
+    import imgModSow2 from '../assets/img/mod_sow2_2023.png';
+    import imgLauncherSow2 from '../assets/img/launcher_sow2_2023.png';
+    import imgWalyverseBot from '../assets/img/walyverse_bot_2023.png';
+
     const projects = [{
             name: 'Portfolio Antonin Russo',
             description: "Projet de conception de mon portfolio professionnel en vue de présenter mes compétences et réalisations. Ce projet vise à mettre en avant mon parcours, mes compétences clés, ainsi que mes expériences professionnelles et projets antérieurs.",
             date: 'Septembre 2023',
             tags: ['HTML', 'TailwindCSS', 'Vue.JS'],
-            img: '../src/assets/img/portfolio_ar_2023.png',
+            img: imgPortfolio,
             link: '',
         },
         {
@@ -15,7 +22,7 @@
             description: "Conception d'un site web vitrine pour la marque Croque Milhoc, comprenant une interface d'administration permettant la gestion efficace du contenu du site.",
             date: 'Mai 2022',
             tags: ['HTML', 'CSS', 'SASS', 'PHP', 'MySQL'],
-            img: '#',
+            img: imgCroqueMilhoc,
             link: '#',
         },
         {
@@ -23,7 +30,7 @@
             description: "Développement d'une plateforme web sur mesure destinée à notre client, incluant un module d'abonnement sophistiqué ainsi qu'un système de gestion de profils utilisateur. De plus, une interface d'administration dédiée est mise en place pour permettre au client de superviser efficacement son site.",
             date: 'Juin 2023',
             tags: ['HTML', 'TailwindCSS', 'Javascript', 'PHP', 'Laravel', 'MySQL'],
-            img: '../src/assets/img/sivibe_2023.png',
+            img: imgSIVIBE,
             link: '#',
         },
         {
@@ -31,7 +38,7 @@
             description: "Conception et création d'un mod Minecraft sur mesure visant à enrichir l'expérience du jeu pour notre client en introduisant de nouveaux outils, armures, minerais, et objets spéciaux.",
             date: 'Avril 2023',
             tags: ['Java', 'Gradle', 'Forge'],
-            img: '#',
+            img: imgModSow2,
             link: '#',
         },
 
@@ -40,7 +47,7 @@
             description: "Conception et réalisation d'un lanceur dédié à Minecraft pour le serveur TheSoulOfWarcraft, offrant une expérience d'accès fluide à l'utilisateur, qu'il dispose d'un compte Mojang ou d'un compte cracké.",
             date: 'Avril 2023',
             tags: ['Java', 'Gradle', 'Forge'],
-            img: '#',
+            img: imgLauncherSow2,
             link: '#',
         },
         {
@@ -48,7 +55,7 @@
             description: "Développement d'un robot Discord personnalisé pour la communauté Walyverse, intégrant un système de gestion de tickets avancé.",
             date: 'Avril 2023',
             tags: ['Javascript', 'Discord.JS'],
-            img: '#',
+            img: imgWalyverseBot,
             link: '#',
         },
         

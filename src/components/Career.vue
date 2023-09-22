@@ -1,7 +1,6 @@
 <script setup>
     import Hypertext from './partials/Hypertext.vue';
     import Heading from './partials/Heading.vue';
-    import Label from './partials/Label.vue';
 
     import {
         createScrollRevealDirective
@@ -62,7 +61,7 @@
                     </div>
                     <div class="pt-1 pb-8">
                         <p class="text-md text-neutral-500">Juillet 2025</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat <Label name="À venir" color="primary" /><Label name="Souhait" color="primary" /></p>
+                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800">À venir</span><span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800">Souhait</span></p>
                         <p class="text-lg text-neutral-800">Obtention du Bac ?</p>
                     </div>
                 </div>
@@ -76,7 +75,7 @@
                     </div>
                     <div class="pt-1">
                         <p class="text-md text-neutral-500">----- 2026</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Étude Chef de Projet Digital <Label name="À venir" color="primary" /><Label name="Souhait" color="primary" /></p>
+                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Étude Chef de Projet Digital <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800">À venir</span><span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800">Souhait</span></p>
                         <p class="text-lg text-neutral-800">Je souhaite d'abord poursuivre des études en tant que <strong>chef de projet</strong> dans le domaine du numérique, puis évoluer vers le <strong>marketing digital</strong>, et enfin <strong>devenir entrepreneur</strong>.</p>
                     </div>
                 </div>

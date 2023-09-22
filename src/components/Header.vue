@@ -14,6 +14,8 @@
 
     const vScrollRevealLeft = createScrollReveal('left');
     const vScrollRevealRight = createScrollReveal('right');
+
+    import imgHeader from '../assets/img/antonin.jpg';
 </script>
 
 <template>
@@ -50,7 +52,9 @@
             <div class="relative lg:w-1/3" v-scroll-reveal-right>
                 <div class="p-8">
                     <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
-                        src="../assets/img/antonin.jpg" alt="" />
+                        :src="imgHeader" alt="" />
+                        <!-- <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
+                        src="../assets/img/antonin.jpg" alt="" /> -->
                 </div>
             </div>
         </div>
