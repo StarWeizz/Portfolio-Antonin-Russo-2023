@@ -1,5 +1,6 @@
 <script setup>
     import IconDownload from "./icons/IconDownload.vue";
+    import Logo from "../assets/img/logo.png";
     import {
         createScrollRevealDirective
     } from 'vue-scroll-reveal';
@@ -53,8 +54,6 @@
                 <div class="p-8">
                     <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
                         :src="imgHeader" alt="" />
-                        <!-- <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
-                        src="../assets/img/antonin.jpg" alt="" /> -->
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@
 <template>
     <nav class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-            <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+            <a href="/" aria-label="Portfolio" title="Portfolio" class="inline-flex items-center">
                 <span class="ml-2 text-xl tracking-wide text-gray-800 uppercase">{{ title }}</span>
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex" id="nav">
@@ -54,7 +54,7 @@
                     </svg>
                 </button>
                 <div v-if="isMenuOpen" class="absolute top-0 left-0 w-full">
-                    <div class="bg-white pb-1">
+                    <div class="bg-white z-10 pl-2 pt-1 pb-2 relative">
                         <div class="flex items-center justify-between mb-4">
                             <div>
                                 <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
