@@ -88,7 +88,7 @@
             <Heading text="MES RÉALISATIONS ET PROJETS." border />
             <div class="max-w-full grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="(project, index) in projects" :key="index"
-                    class="bg-white rounded ease-in-out duration-100 sm:hover:scale-105">
+                    class="bg-white rounded ease-in-out duration-100 sm:hover:scale-105 project">
                     <a :href="project.link" aria-label="Article"><img :src="project.img" class="object-cover w-full h-48 rounded" alt="" /></a>
                     <div class="py-5 max-w-full">
                         <p class="text-md text-neutral-500">
