@@ -1,21 +1,11 @@
 <template>
-    <!-- <header>
-        <div class="extraBox"></div>
-        <div class="experience-show">
-            <img src="../assets/img/background.jpg" class="banner">
-            <a href="#" class="logo experience-middle">Anto.</a>
-            <div class="toggle"></div>
-        </div>
-    </header> -->
     <div class='experience'>
         <div class="extraBox">
         </div>
         <div class='experience-show'>
-            <!-- <h1 class='experience-top'>Let Me show you</h1> -->
             <div class='experience-middle-container'>
                 <h1 class='experience-middle'>Antonin.</h1>
             </div>
-            <!-- <h1 class='experience-bottom'>My Magic Trick</h1> -->
         </div>
     </div>
 </template>
@@ -130,7 +120,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgb(0, 0, 0);
+        background-image: radial-gradient(circle at bottom center, rgb(141, 118, 197),rgb(119, 60, 147));
         opacity: 1;
         width: 100%;
         height: 100%;
@@ -201,7 +191,7 @@
                     start: "top top",
                     end: "+=1500",
                     scrub: true,
-                    markers: true,
+                    markers: false,
                     pin: ".experience"
                 }
             });

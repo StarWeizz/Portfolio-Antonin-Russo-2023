@@ -8,6 +8,7 @@
     import imgModSow2 from '../assets/img/mod_sow2_2023.png';
     import imgLauncherSow2 from '../assets/img/launcher_sow2_2023.png';
     import imgWalyverseBot from '../assets/img/walyverse_bot_2023.png';
+    import imgStripeMinecraft from '../assets/img/walyverse_stripe-minecraft_2024.png';
 
     const projects = [{
             name: 'Portfolio Antonin Russo',
@@ -15,6 +16,14 @@
             date: 'Septembre 2023',
             tags: ['HTML', 'TailwindCSS', 'Vue.JS'],
             img: imgPortfolio,
+            link: '',
+        },
+        {
+            name: 'Boutique stripe dans Minecraft',
+            description: "Projet qui consiste à créer une boutique stripe directement dans un serveur Minecraft. Le joueur clique sur l'objet de son choix, un lien pour payer est généré. Le joueur rentre ces coordonnées et reçois directement en jeu son produit. Le système backend est géré avec des webhooks et un reverse proxy.",
+            date: 'Mars 2024',
+            tags: ['Stripe', 'Nginx', 'Java', 'Maven'],
+            img: imgStripeMinecraft,
             link: '',
         },
         {

@@ -11,6 +11,20 @@ import { onMounted } from 'vue';
 
   // Ajoutez une fonction pour exécuter le script après que le DOM soit chargé
   onMounted(() => {
+  const isPC = () => {
+    const userAgentInfo = navigator.userAgent;
+    const agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+    let flag = true;
+    for (let i = 0; i < agents.length; i++) {
+      if (userAgentInfo.indexOf(agents[i]) > 0) {
+        flag = false;
+        break;
+      }
+    }
+    return flag;
+  };
+
+  if (isPC()) {
     const text = document.querySelector('.mouseover_text');
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
@@ -22,8 +36,10 @@ import { onMounted } from 'vue';
     document.addEventListener("mousemove", function (e) {
       text.style.left = e.pageX + 'px';
       text.style.top = e.pageY + 'px';
-    })
-  })
+    });
+  }
+});
+
 </script>
 
 <template>
