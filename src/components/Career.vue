@@ -48,7 +48,7 @@
                     <div class="pt-1 pb-8">
                         <p class="text-md text-neutral-500">Juillet 2022 - {{ getMonth() }} {{ new Date().getFullYear() }}</p>
                         <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Walyverse</p>
-                        <p class="text-lg text-neutral-800">Groupe de serveurs de jeux axé sur le jeu <strong>Minecraft</strong>. Mes principales fonctions sont d'assurer l'intégrité de la communauté à travers le rôle de <strong>Modérateur</strong>, mais aussi de développer différentes fonctionnalités permettant d'enrichir notre offre de contenu en tant que <strong>Développeur</strong>. <Hypertext text="En savoir plus sur Walyverse" href="https://walyverse.fr" target /></p>
+                        <p class="text-lg text-neutral-800">Groupe de serveurs de jeux axé sur le jeu <strong>Minecraft</strong>. Mes principales fonctions sont d'assurer l'intégrité de la communauté à travers le rôle d'<strong>Administrateur</strong>, mais aussi de développer différentes fonctionnalités permettant d'enrichir notre offre de contenu en tant que <strong>Développeur</strong>. <Hypertext text="En savoir plus sur Walyverse" href="https://walyverse.fr" target /></p>
                     </div>
                 </div>
                 <div class="flex">

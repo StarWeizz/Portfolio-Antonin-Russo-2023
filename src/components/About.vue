@@ -21,10 +21,10 @@
     <section id="about">
         <div style="clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);" class="h-24 bg-primary-200"></div>
         <div class="bg-primary-200">
-            <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 py-8" v-scroll-reveal>
-                <div class="p-8 rounded shadow-md sm:p-12 bg-neutral-50 skew-y-1">
+            <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 py-8 backdrop-blur-3xl" v-scroll-reveal>
+                <div class="p-8 rounded shadow-md sm:p-12 bg-neutral-50">
                     <h2 class="text-4xl font-extrabold font-sans text-neutral-800 mb-8">À PROPOS DE MOI.</h2>
-                    <p class="text-xl text-neutral-800 border-l border-l-4 border-neutral-200 pl-4 text-justify">
+                    <p class="text-xl text-neutral-800 border-l-4 border-neutral-200 pl-4 text-justify">
                         Salut ! Je suis Antonin Russo, un développeur <strong>Full Stack passionné</strong> par la création de solutions numériques innovantes. Ma passion pour le développement a été le moteur de mon parcours. Mon voyage dans le monde de la programmation a commencé il y a {{ new Date().getFullYear() - 2017 }} ans lorsque je n'avais encore que 10 ans, et depuis lors, je suis tombé amoureux de la magie de la transformation d'idées en quelque chose de réel grâce au code. <br><br>
 
                         En tant qu'<strong>autodidacte</strong>, j'ai constamment soif de nouvelles connaissances et je suis toujours à la recherche de défis techniques à relever. Cette soif d'apprentissage m'a permis de maîtriser un large éventail de langages de programmation, de cadres et d'outils, me permettant ainsi de rester flexible et adaptable dans un monde technologique en constante évolution. <br><br>

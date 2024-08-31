@@ -6,7 +6,6 @@
   import Projects from './components/Projects.vue';
   import Career from './components/Career.vue';
   import TechnologiesAndTools from './components/TechnologiesAndTools.vue';
-  import Landing from './components/Landing.vue';
 import { onMounted } from 'vue';
 
   // Ajoutez une fonction pour exécuter le script après que le DOM soit chargé
@@ -43,22 +42,8 @@ import { onMounted } from 'vue';
 </script>
 
 <template>
-
-  <div class='experience'>
-        <div class="extraBox">
-        </div>
-        <div class='experience-show'>
-            <!-- <h1 class='experience-top'>Let Me show you</h1> -->
-            <div class='experience-middle-container'>
-                <h1 class='experience-middle'>Antonin.</h1>
-            </div>
-            <!-- <h1 class='experience-bottom'>My Magic Trick</h1> -->
-        </div>
-    </div>
     
   <h2 class="mouseover_text">Antonin-Russo-</h2>
-
-  <Landing />
 
   <Navbar />
 
