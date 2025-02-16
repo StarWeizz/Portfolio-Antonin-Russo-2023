@@ -25,10 +25,10 @@
                 <div class="flex">
                     <div class="flex flex-col items-center mr-4">
                         <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-neutral-300 my-1 rounded-full">
+                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
                             </div>
                         </div>
-                        <div class="w-px h-full bg-neutral-300"></div>
+                        <div class="w-px h-full bg-rose-300"></div>
                     </div>
                     <div class="pt-1 pb-8">
                         <p class="text-md text-neutral-500">Juillet 2021</p>
@@ -40,14 +40,14 @@
                 <div class="flex">
                     <div class="flex flex-col items-center mr-4">
                         <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-neutral-300 my-1 rounded-full">
+                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
                             </div>
                         </div>
-                        <div class="w-px h-full bg-neutral-300"></div>
+                        <div class="w-px h-full bg-rose-300"></div>
                     </div>
                     <div class="pt-1 pb-8">
                         <p class="text-md text-neutral-500">Juillet 2022 - {{ getMonth() }} {{ new Date().getFullYear() }}</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Walyverse</p>
+                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Groupe Walyverse</p>
                         <p class="text-lg text-neutral-800">Groupe de serveurs de jeux axé sur le jeu <strong>Minecraft</strong>. Mes principales fonctions sont d'assurer l'intégrité de la communauté à travers le rôle d'<strong>Administrateur</strong>, mais aussi de développer différentes fonctionnalités permettant d'enrichir notre offre de contenu en tant que <strong>Développeur</strong>. <Hypertext text="En savoir plus sur Walyverse" href="https://walyverse.fr" target /></p>
                     </div>
                 </div>
@@ -60,8 +60,9 @@
                         <div class="w-px h-full bg-neutral-300"></div>
                     </div>
                     <div class="pt-1 pb-8">
-                        <p class="text-md text-neutral-500">Juillet 2025</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800">Souhait</span></p>
+                        <p class="text-md mb-1 text-neutral-500">Juillet 2025</p>
+                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-primary-100 text-primary-800">Souhait</span>
+                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat</p>
                         <p class="text-lg text-neutral-800">Obtention du Bac ?</p>
                     </div>
                 </div>
@@ -74,8 +75,9 @@
                         <!-- <div class="w-px h-full bg-neutral-300"></div> -->
                     </div>
                     <div class="pt-1">
-                        <p class="text-md text-neutral-500">----- 2026</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Étude Chef de Projet Digital <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded-full bg-primary-100 text-primary-800">Souhait</span></p>
+                        <p class="text-md mb-1 text-neutral-500">Septembre 2026</p>
+                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-primary-100 text-primary-800">Souhait</span>
+                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude Chef de Projet Digital / Informatique, développement</p>
                         <p class="text-lg text-neutral-800">Je souhaite d'abord poursuivre des études en tant que <strong>chef de projet</strong> dans le domaine du numérique, puis évoluer vers le <strong>marketing digital</strong>, et enfin <strong>devenir entrepreneur</strong>.</p>
                     </div>
                 </div>

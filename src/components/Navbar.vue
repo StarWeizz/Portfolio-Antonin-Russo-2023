@@ -26,13 +26,14 @@
     ];
 </script>
 
-<template>    
-        <nav class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+<template>
+    <div>
+        <nav class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full bg-white lg:max-w-screen-2xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
                 <ul class="flex items-center hidden space-x-8 lg:flex" id="nav">
                     <li v-for="menuItem in menuItems" :key="menuItem.label">
                         <a :href="menuItem.href" :aria-label="menuItem.label" :title="menuItem.label"
-                            class="font-medium tracking-wide text-neutral-800 transition-colors duration-200 hover:text-deep-purple-accent-400 relative after:bg-primary-200 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            class="font-medium tracking-wide text-lg text-neutral-800 transition-colors duration-200 hover:text-deep-purple-accent-400 relative after:bg-primary-200 after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                             {{ menuItem.label }}
                         </a>
                     </li>
@@ -86,6 +87,7 @@
                 </div>
             </div>
         </nav>
+    </div>
 </template>
 
 <script>

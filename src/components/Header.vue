@@ -26,7 +26,7 @@
                 <div class="mb-10 lg:w-2/3 lg:pr-5 lg:mb-0" v-scroll-reveal-left>
                     <div class="mb-4">
                         <h2 class="mb-8 font-sans text-4xl font-extrabold text-neutral-800 sm:text-6xl sm:leading-none">
-                            Antonin RUSSO, Développeur <span class="inline-block text-secondary-300">Full-Stack</span><br
+                            <span class="text-orange-300">Antonin RUSSO</span>, Développeur <span class="inline-block text-secondary-300">Full-Stack</span><br
                                 class="hidden md:block" />
                             en <span class="inline-block text-primary-300">Apprentissage</span>
                             continu

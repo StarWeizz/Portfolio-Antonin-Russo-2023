@@ -19,8 +19,8 @@
 
 <template>
     <section id="about">
-        <div style="clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);" class="h-24 bg-primary-200"></div>
-        <div class="bg-primary-200">
+        <div style="clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);" class="h-24 bg-gradient-to-tr from-primary-200 to-secondary-200"></div>
+        <div class="bg-gradient-to-br from-primary-200 to-secondary-200">
             <div class="px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 py-8 backdrop-blur-3xl" v-scroll-reveal>
                 <div class="p-8 rounded shadow-md sm:p-12 bg-neutral-50">
                     <h2 class="text-4xl font-extrabold font-sans text-neutral-800 mb-8">À PROPOS DE MOI.</h2>
@@ -43,6 +43,6 @@
             </div>
         </div>
         
-        <div style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);" class="h-24 bg-primary-200"></div>
+        <div style="clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);" class="h-24 bg-gradient-to-tr from-primary-200 to-secondary-200"></div>
     </section>
 </template>
