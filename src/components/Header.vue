@@ -16,7 +16,7 @@
     const vScrollRevealLeft = createScrollReveal('left');
     const vScrollRevealRight = createScrollReveal('right');
 
-    import imgHeader from '../assets/img/antonin.jpg';
+    import imgHeader from '../assets/img/antonin.png';
 </script>
 
 <template>
