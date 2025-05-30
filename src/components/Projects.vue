@@ -81,7 +81,7 @@
             date: 'Juin 2023',
             tags: ['HTML', 'TailwindCSS', 'Javascript', 'PHP', 'Laravel', 'MySQL'],
             img: imgSIVIBE,
-            status: ['Terminé'],
+            status: ['Terminé', 'Maintenu'],
             link: '#',
         },
         {
@@ -117,7 +117,7 @@
             date: 'Juin 2024',
             tags: ['Vue.JS', 'HTML', 'TailwindCSS', 'Lenis'],
             img: imgDockWear,
-            status: ['En cours'],
+            status: ['Suspendu'],
             link: '#',
         },
         {
@@ -126,7 +126,7 @@
             date: 'Novembre 2024',
             tags: ['WordPress', 'CSS'],
             img: imgAAB,
-            status: ['En cours'],
+            status: ['Suspendu'],
             link: '#',
         },
         {
@@ -153,7 +153,7 @@
             date: 'Décembre 2024',
             tags: ['HTML', 'Javascript', 'Laravel', 'TailwindCSS', 'MySQL', 'PHP'],
             img: imgLaraScrapRE,
-            status: ['En cours'],
+            status: ['Suspendu'],
             link: '#',
         },
         {
@@ -162,7 +162,7 @@
             date: 'Janvier 2025',
             tags: ['Dart', 'Flutter'],
             img: imgVaultify,
-            status: ['En cours'],
+            status: ['Suspendu'],
             link: '#',
         },
     ];
@@ -204,11 +204,13 @@
         case 'Maintenu':
         return 'bg-green-100 text-green-800';
         case 'En cours':
-        return 'bg-orange-100 text-orange-800';
+        return 'bg-gray-100 text-gray-800';
         case 'Abandonné':
         return 'bg-red-100 text-red-800';
         case 'Terminé':
         return 'bg-blue-100 text-blue-800';
+        case 'Suspendu':
+        return 'bg-orange-100 text-orange-800'
         default:
         return 'bg-gray-100 text-gray-800';
     }
