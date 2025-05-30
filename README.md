@@ -4,7 +4,7 @@ Bienvenue sur mon portfolio personnel, créé avec Vue.js, Tailwind CSS et Vite 
 
 ## Aperçu
 
-![Capture d'écran du portfolio](lien_vers_capture_d_ecran.png)
+![Capture d'écran du portfolio](https://github.com/StarWeizz/Portfolio-Antonin-Russo-2023/blob/main/src/assets/img/portfolio_ar_2023_old.png)
 
 ## Technologies utilisées
 
@@ -65,8 +65,8 @@ Si vous souhaitez contribuer à ce projet, n'hésitez pas à ouvrir une issue ou
 
 Pour me contacter, vous pouvez utiliser le formulaire de contact sur mon site web ou me suivre sur les réseaux sociaux :
 
-- [Instagram]()
-- [LinkedIn]()
+- [Instagram](https://instagram.com/r.antonin.pro)
+- [LinkedIn](https://linkedin.com/in/antonin-russo-33096626b)
 
 N'hésitez pas à explorer mon portfolio et à me faire part de vos commentaires ou suggestions !
 

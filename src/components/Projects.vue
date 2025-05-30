@@ -17,6 +17,8 @@
     import imgGastroShare from '../assets/img/GastroShare_2022.png'
     import imgLaraScrapRE from '../assets/img/larascrap-re_2024.png';
     import imgVaultify from '../assets/img/vaultify_2025.png';
+    import imgAyurJyotish from '../assets/img/ayur-jyotish.fr_2025.png';
+    import imgSTRTIFY from '../assets/img/srtify_2025.png';
 
     const projects = [
         {
@@ -43,6 +45,24 @@
             date: 'Décembre 2024',
             tags: ['Python'],
             img: imgPEACalculator,
+            status: ['En cours'],
+            link: '',
+        },
+        {
+            name: 'SRTIFY',
+            description: "SRTIFY est un outil permettant de transposer un fichier srt en blog/article",
+            date: 'Juin 2025',
+            tags: ['HTML', 'Laravel', 'Tailwind'],
+            img: imgSTRTIFY,
+            status: ['En cours'],
+            link: '',
+        },
+        {
+            name: 'AyurJyotish',
+            description: "AyurJyotish est un site de bien être et d'astrologie indienne.",
+            date: 'Mai 2025',
+            tags: ['HTML', 'Wordpress'],
+            img: imgAyurJyotish,
             status: ['En cours'],
             link: '',
         },

@@ -94,6 +94,6 @@ import { onMounted } from 'vue';
         top: -100px;
         text-transform: uppercase;
         display: inline-block;
-        transform-origin: 0 90px;
+        transform-origin: 0 80px;
     }
 </style>
