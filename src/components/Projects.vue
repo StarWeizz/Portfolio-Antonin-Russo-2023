@@ -246,6 +246,7 @@
                     </div>
                 </div>
             </div>
+            <h3 class="mt-12 font-mono text-center text-4xl">Et bien d'autres encore...<br></h3>
         </div>
     </section>
 </template>

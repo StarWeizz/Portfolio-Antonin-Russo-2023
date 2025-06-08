@@ -1,6 +1,7 @@
 <script setup>
     import IconLinkedIn from "./icons/IconLinkedIn.vue"
     import IconInstagram from "./icons/IconInstagram.vue";
+    import IconGithub from "./icons/IconGithub.vue";
 
     const socialLinks = [{
             link: "https://instagram.com/r.antonin.pro",
@@ -9,6 +10,10 @@
         {
             link: "https://linkedin.com/in/antonin-russo-33096626b",
             icon: IconLinkedIn
+        },
+        {
+            link: "https://github.com/StarWeizz",
+            icon: IconGithub
         },
     ];
 </script>
@@ -21,7 +26,7 @@
             </p>
             <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                 <a v-for="(social, index) in socialLinks" :ket="index" :href="social.link" target="_blank" class="ml-3 text-neutral-800">
-                    <component :is="social.icon" /></a>
+                    <component :is="social.icon" class="max-h-5" /></a>
             </span>
         </div>
     </div>
