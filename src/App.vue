@@ -8,6 +8,8 @@
   import TechnologiesAndTools from './components/TechnologiesAndTools.vue';
 import { onMounted } from 'vue';
 
+  import backgroundImg from './assets/img/background_top.jpg';
+
   // Ajoutez une fonction pour exécuter le script après que le DOM soit chargé
   onMounted(() => {
   const isPC = () => {
@@ -45,17 +47,21 @@ import { onMounted } from 'vue';
     
   <h2 class="mouseover_text">Antonin-Russo-</h2>
 
-  <Navbar />
+  <div :style="{ backgroundImage: `url(${backgroundImg})` }" 
+       class="bg-cover bg-center min-h-screen relative">
+      <Navbar />
 
-  <Header />
+      <Header />
 
-  <About />
+      <About />
 
-  <Career />
+      <Career />
 
-  <Projects />
+      <Projects />
 
-  <TechnologiesAndTools />
+      <TechnologiesAndTools />
+
+  </div>
 
   <Footer />
 
@@ -68,7 +74,7 @@ import { onMounted } from 'vue';
 
     .mouseover_text {
         position: absolute;
-        font-size: 1.5em;
+        font-size: 1.1em;
         color: #000000;
         text-align: center;
         animation: animate 7.5s linear infinite;
@@ -94,6 +100,6 @@ import { onMounted } from 'vue';
         top: -100px;
         text-transform: uppercase;
         display: inline-block;
-        transform-origin: 0 80px;
+        transform-origin: 0 100px;
     }
 </style>

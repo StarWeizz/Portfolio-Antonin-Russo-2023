@@ -61,9 +61,8 @@
                     </div>
                     <div class="pt-1 pb-8">
                         <p class="text-md mb-1 text-neutral-500">Juillet 2025</p>
-                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-primary-100 text-primary-800">Souhait</span>
                         <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat</p>
-                        <p class="text-lg text-neutral-800">Obtention du Bac ?</p>
+                        <p class="text-lg text-neutral-800">Obtention du Baccalauréat avec <strong>Mention Assez Bien</strong>.</p>
                     </div>
                 </div>
                 <div class="flex">
@@ -77,8 +76,8 @@
                     <div class="pt-1">
                         <p class="text-md mb-1 text-neutral-500">Septembre 2026</p>
                         <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-primary-100 text-primary-800">Souhait</span>
-                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude Chef de Projet Digital / Informatique, développement</p>
-                        <p class="text-lg text-neutral-800">Je souhaite d'abord poursuivre des études en tant que <strong>chef de projet</strong> dans le domaine du numérique, puis évoluer vers le <strong>marketing digital</strong>, et enfin <strong>devenir entrepreneur</strong>.</p>
+                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude dans l'Intelligence Artificiel & Data</p>
+                        <p class="text-lg text-neutral-800">Je souhaite d'abord poursuivre des études dans l'<strong>intelligence artificel</strong>, puis me tourner vers l'<strong>entrepreneuriat</strong> afin de <strong>devenir entrepreneur</strong>.</p>
                     </div>
                 </div>
             </div>
