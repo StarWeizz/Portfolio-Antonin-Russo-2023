@@ -34,9 +34,21 @@ import { onMounted } from 'vue';
       element[i].style.transform = "rotate(" + i * 26 + "deg)";
     }
 
+    let scrollTimer = null;
+
     document.addEventListener("mousemove", function (e) {
-      text.style.left = e.pageX + 'px';
-      text.style.top = e.pageY + 'px';
+      text.style.left = e.clientX + 'px';
+      text.style.top = e.clientY + 'px';
+      text.style.opacity = '1';
+    });
+
+    document.addEventListener("scroll", function () {
+      text.style.opacity = '0';
+      
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => {
+        text.style.opacity = '1';
+      }, 150);
     });
   }
 });
@@ -45,7 +57,7 @@ import { onMounted } from 'vue';
 
 <template>
     
-  <h2 class="mouseover_text">Antonin-Russo-</h2>
+  <h2 class="mouseover_text mix-blend-difference">Antonin-Russo-</h2>
 
   <div :style="{ backgroundImage: `url(${backgroundImg})` }" 
        class="bg-cover bg-center min-h-screen relative">
@@ -73,14 +85,16 @@ import { onMounted } from 'vue';
   }
 
     .mouseover_text {
-        position: absolute;
+        position: fixed;
         font-size: 1.1em;
-        color: #000000;
+        color: #ffffff;
         text-align: center;
         animation: animate 7.5s linear infinite;
         pointer-events: none;
         user-select: none;
         z-index: 100;
+        transition: opacity 0.2s ease-out;
+        mix-blend-mode: difference;
     }
 
     @keyframes animate
