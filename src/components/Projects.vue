@@ -19,6 +19,8 @@
     import imgVaultify from '../assets/img/vaultify_2025.png';
     import imgAyurJyotish from '../assets/img/ayur-jyotish.fr_2025.png';
     import imgSTRTIFY from '../assets/img/srtify_2025.png';
+    import imgEldoria from '../assets/img/eldoria_2025.png';
+    import imgWalyverse from '../assets/img/walyverse.png';
 
     const projects = [
         {
@@ -56,6 +58,15 @@
             img: imgSTRTIFY,
             status: ['En cours'],
             link: '',
+        },
+        {
+            name: 'Eldoria',
+            description: "Eldoria est un jeu d’aventure textuel où vous explorez Ynovia, guidé par Emeryn. Découvrez un portail vers un autre monde, affrontez monstres et le redoutable Maximor. Jouable en ligne de commande, il se distingue par sa map interactive qui rend l’expérience plus immersive.",
+            date: 'Septembre 2025',
+            tags: ['Go', 'CLI'],
+            img: imgEldoria,
+            status: ['Terminé'],
+            link: 'https://github.com/StarWeizz/projet-red_Eldoria',
         },
         {
             name: 'AyurJyotish',
@@ -165,6 +176,15 @@
             status: ['Suspendu'],
             link: '#',
         },
+        {
+            name: 'Walyverse',
+            description: "Création de modules et plugins pour le groupe Walyverse, spécialiste des serveurs Minecraft.",
+            date: 'Juillet 2023 - 2025',
+            tags: ['Java', 'DevOPS', 'Docker', 'Kubernetes', 'Bash', 'Linux'],
+            img: imgWalyverse,
+            status: ['Maintenu', 'Privé'],
+            link: '#',
+        },
     ];
 
     // Fonction pour convertir la date 'Mois Année' en objet Date
@@ -230,7 +250,7 @@
             <div class="max-w-full grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 <div v-for="(project, index) in projects" :key="index"
                     class="bg-white rounded ease-in-out duration-100 sm:hover:scale-105">
-                    <a :href="project.link" aria-label="Article"><img :src="project.img" class="object-cover w-full h-48 rounded" alt="" /></a>
+                    <a :href="project.link" target="_blank"  aria-label="Article"><img :src="project.img" class="object-cover w-full h-48 rounded" alt="" /></a>
                     <div class="py-5 max-w-full">
                         <p class="text-md text-neutral-500 flex items-center justify-between">
                             {{ project.date  }}
