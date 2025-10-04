@@ -27,13 +27,13 @@
 </script>
 
 <template>
-    <div>
+    <div class="border-b border-gray-300">
         <nav class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
                 <ul class="flex items-center hidden space-x-8 lg:flex" id="nav">
                     <li v-for="menuItem in menuItems" :key="menuItem.label">
                         <a :href="menuItem.href" :aria-label="menuItem.label" :title="menuItem.label"
-                            class="font-medium tracking-wide text-xl text-slate-50 transition-colors duration-200 hover:text-deep-purple-accent-400 relative after:bg-slate-50 after:absolute after:h-1 after:w-0 after:-bottom-2 after:left-0 hover:after:w-full after:transition-all after:duration-300">
+                            class="font-medium tracking-wide text-xl text-neutral-800 transition-colors duration-200 hover:text-deep-purple-accent-400 relative after:bg-neutral-800 after:absolute after:h-1 after:w-0 after:-bottom-2 after:left-0 hover:after:w-full after:transition-all after:duration-300">
                             {{ menuItem.label }}
                         </a>
                     </li>
@@ -53,7 +53,7 @@
                         </svg>
                     </button>
                     <div v-if="isMenuOpen" class="absolute top-0 left-0 w-full">
-                        <div class="bg-white z-10 pl-2 pt-1 pb-2 relative">
+                        <div class="bg-gray-800 z-10 pl-2 pt-1 pb-2 relative">
                             <div class="flex items-center justify-between mb-4">
                                 <div>
                                     <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">

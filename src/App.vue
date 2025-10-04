@@ -59,8 +59,7 @@ import { onMounted } from 'vue';
     
   <h2 class="mouseover_text mix-blend-difference">Antonin-Russo-</h2>
 
-  <div :style="{ backgroundImage: `url(${backgroundImg})` }" 
-       class="bg-cover bg-center min-h-screen relative">
+  <div class="bg-white">
       <Navbar />
 
       <Header />
