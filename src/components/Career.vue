@@ -45,7 +45,8 @@
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-right">
                                 <p class="mb-3 text-lg text-rose-400">Juillet 2021</p>
-                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Diplôme - Brevet des collèges</h4>
+                                <span class="inline-block text-base font-medium mb-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">Diplôme</span>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Brevet des collèges</h4>
                                 <p class="text-base md:text-lg leading-relaxed text-neutral-300">
                                     Obtention du brevet des collèges avec <strong class="text-white">Mention Très Bien</strong>.
                                 </p>
@@ -70,7 +71,8 @@
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-right">
                                 <p class="mb-3 text-lg text-rose-400">Juillet 2025</p>
-                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Diplôme Baccalauréat</h4>
+                                <span class="inline-block text-base font-medium mb-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/30">Diplôme</span>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Baccalauréat</h4>
                                 <p class="text-base md:text-lg leading-relaxed text-neutral-300">
                                     Obtention du Baccalauréat avec <strong class="text-white">Mention Assez Bien</strong>.
                                 </p>
@@ -81,7 +83,7 @@
                         <div class="mb-8 flex justify-between items-center w-full right-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4">
-                                <p class="mb-3 text-lg text-rose-400">Septembre 2025</p>
+                                <p class="mb-3 text-lg text-rose-400">Septembre 2025 - Juillet 2028</p>
                                 <h4 class="mb-3 font-bold text-xl md:text-3xl text-left">Étude dans l'Informatique (Spécialisation IA & Data)</h4>
                                 <p class="text-base md:text-lg leading-relaxed text-neutral-300">
                                     Actuellement étudiant à <strong class="text-white">Ynov Campus</strong>, je poursuis une formation spécialisée en informatique, axée sur l'<strong class="text-white">intelligence artificielle</strong> et la <strong class="text-white">data</strong>, afin de développer des compétences avancées dans ces domaines innovants.
@@ -93,7 +95,7 @@
                         <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                             <div class="order-1 w-5/12"></div>
                             <div class="order-1 w-5/12 px-1 py-4 text-right">
-                                <p class="mb-3 text-lg text-rose-400">Juillet 2028</p>
+                                <p class="mb-3 text-lg text-rose-400">2028</p>
                                 <span class="inline-block text-base font-medium mb-2 px-3 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">À venir</span>
                                 <h4 class="mb-3 font-bold text-xl md:text-3xl">Lancement d'un projet entrepreneurial</h4>
                                 <p class="text-base md:text-lg leading-relaxed text-neutral-300">
