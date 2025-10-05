@@ -85,6 +85,20 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex">
+                    <button href="#"
+                        class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary-500 text-white shadow hover:bg-secondary-500/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-secondary-500 hover:ring-offset-2 ">
+                        <span
+                            class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"></span>
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 fill-current mr-2" viewBox="0 0 512 512">
+                                <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6L269.8 394.5c-3.8 3.5-8.7 5.5-13.8 5.5s-10.1-2-13.8-5.5L135.1 294.6c-4.5-4.2-7.1-10.1-7.1-16.3c0-12.3 10-22.3 22.3-22.3l57.7 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 57.7 0c12.3 0 22.3 10 22.3 22.3c0 6.2-2.6 12.1-7.1 16.3z"/>
+                            </svg>
+                            <span class="ml-1 text-white">Télécharger mon CV</span>
+                        </div>
+                    </button>
+
+                </div>
             </div>
         </nav>
     </div>

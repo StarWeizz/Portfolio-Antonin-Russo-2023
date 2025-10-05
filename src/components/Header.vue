@@ -1,5 +1,4 @@
 <script setup>
-    import IconDownload from "./icons/IconDownload.vue";
     import Logo from "../assets/img/logo.png";
     import {
         createScrollRevealDirective
@@ -23,7 +22,7 @@
     <section id="header">
         <div class="px-4 md:px-24 lg:px-8 ">
             <div class="flex flex-col justify-between lg:flex-row">
-                <div class="mb-10 lg:w-2/3 lg:pr-5 lg:mb-0 p-16" v-scroll-reveal-left>
+                <div class="lg:w-2/3 lg:pr-5 lg:mb-0 p-16 py-32" v-scroll-reveal-left>
                     <div class="mb-4">
                         <h2 class="mb-8 font-sans text-4xl font-extrabold text-neutral-800 sm:text-6xl sm:leading-none">
                             <span class="text-secondary-400">Antonin RUSSO</span>, <br>Développeur <span class="inline-block text-orange-300 ">Full-Stack</span><br
@@ -43,17 +42,10 @@
                             des questions !
                         </p>
                     </div>
-                    <div class="flex flex-row items-center">
-                        <button type="button"
-                            class="text-neutral-800 bg-secondary-200 cursor-not-allowed hover:bg-secondary-300 font-medium rounded text-md px-4 py-2 text-center inline-flex items-center">
-                            Télécharger mon CV
-                            <!-- <IconDownload class="ml-2" /> -->
-                        </button>
-                    </div>
                 </div>
                 <div class="border-l relative lg:w-1/3" v-scroll-reveal-right>
                     <div class="p-16">
-                        <img class="object-cover w-full h-56 rounded shadow sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
+                        <img class="object-cover w-full h-56 rounded shadow sm:h-96 ease-in-out duration-100 hover:scale-110"
                             :src="imgHeader" alt="" />
                     </div>
                 </div>

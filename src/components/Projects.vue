@@ -242,9 +242,6 @@
 
 <template>
     <section id="projects" v-scroll-reveal>
-        <div class="aboslute top-0 left-0 -z-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="text-white translate-y-1" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,320L48,298.7C96,277,192,235,288,218.7C384,203,480,213,576,234.7C672,256,768,288,864,277.3C960,267,1056,213,1152,202.7C1248,192,1344,224,1392,240L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </div>
         <div class="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full bg-white rounded lg:max-w-screen-4xl md:px-24 lg:px-48 lg:py-8">
             <Heading text="MES RÉALISATIONS ET PROJETS." border class="pt-12 w-full z-20" />
             <div class="max-w-full grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
