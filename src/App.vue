@@ -6,6 +6,7 @@
   import Projects from './components/Projects.vue';
   import Career from './components/Career.vue';
   import TechnologiesAndTools from './components/TechnologiesAndTools.vue';
+  import BackToTop from './components/BackToTop.vue';
 import { onMounted } from 'vue';
 
   import backgroundImg from './assets/img/background_top.jpg';
@@ -75,6 +76,8 @@ import { onMounted } from 'vue';
   </div>
 
   <Footer />
+
+  <BackToTop />
 
 </template>
 

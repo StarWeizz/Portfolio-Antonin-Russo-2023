@@ -27,7 +27,7 @@
 </script>
 
 <template>
-    <div class="border-b border-gray-300">
+    <div class="sticky top-0 z-50 bg-white border-b border-gray-300">
         <nav class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
                 <ul class="flex items-center hidden space-x-8 lg:flex" id="nav">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="flex">
                     <button href="#"
-                        class="flex overflow-hidden items-center text-sm font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary-500 text-white shadow hover:bg-secondary-500/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-secondary-500 hover:ring-offset-2 ">
+                        class="flex overflow-hidden items-center font-medium focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-secondary-500 text-white shadow hover:bg-secondary-500/90 h-9 px-4 py-2 max-w-52 whitespace-pre md:flex group relative w-full justify-center gap-2 rounded-md transition-all duration-300 ease-out hover:ring-2 hover:ring-secondary-500 hover:ring-offset-2 ">
                         <span
                             class="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40"></span>
                         <div class="flex items-center">
