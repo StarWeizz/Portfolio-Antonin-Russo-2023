@@ -19,6 +19,7 @@
 
 <template>
     <section id="about">
+        
         <div class="sm:max-w-xl md:max-w-full lg:max-w-screen-3xl border-t p-12" v-scroll-reveal>
             <div class="rounded sm:p-12">
                 <h2 class="text-4xl font-extrabold font-sans text-neutral-800 mb-8">À PROPOS DE MOI.</h2>

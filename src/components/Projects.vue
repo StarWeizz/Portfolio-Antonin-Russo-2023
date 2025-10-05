@@ -217,7 +217,7 @@
     };
 
     const vScrollReveal = createScrollReveal('left');
-    
+
     // Fonction pour obtenir les classes dynamiques
     const getStatusClass = (status) => {
     switch (status) {
