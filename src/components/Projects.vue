@@ -249,10 +249,10 @@
                     class="bg-white rounded ease-in-out duration-100 sm:hover:scale-105">
                     <a :href="project.link" target="_blank"  aria-label="Article"><img :src="project.img" class="object-cover w-full h-48 rounded" alt="" /></a>
                     <div class="py-5 max-w-full">
-                        <p class="text-md text-neutral-500 flex items-center justify-between">
-                            {{ project.date  }}
-                            <div>
-                                <SmallTag v-for="(status, index) in project.status" class="mr-2" :key="index" :name="status" :class="getStatusClass(status)" />
+                        <p class="text-md text-neutral-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                            <span>{{ project.date }}</span>
+                            <div class="flex flex-wrap gap-2">
+                                <SmallTag v-for="(status, index) in project.status" :key="index" :name="status" :class="getStatusClass(status)" />
                             </div>
                         </p>
                         <a href="/" aria-label="Article"
@@ -268,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <h3 class="mt-12 font-mono text-center text-4xl">Et bien d'autres encore...<br></h3>
+            <h3 class="mt-12 font-mono text-center text-2xl sm:text-3xl md:text-4xl px-4">Et bien d'autres encore...<br></h3>
         </div>
     </section>
 </template>
