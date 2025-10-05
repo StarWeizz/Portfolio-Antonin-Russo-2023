@@ -54,10 +54,10 @@
                 <div class="flex">
                     <div class="flex flex-col items-center mr-4">
                         <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-neutral-300 my-1 rounded-full">
+                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
                             </div>
                         </div>
-                        <div class="w-px h-full bg-neutral-300"></div>
+                        <div class="w-px h-full bg-rose-300"></div>
                     </div>
                     <div class="pt-1 pb-8">
                         <p class="text-md mb-1 text-neutral-500">Juillet 2025</p>
@@ -68,19 +68,34 @@
                 <div class="flex">
                     <div class="flex flex-col items-center mr-4">
                         <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-neutral-300 my-1 rounded-full">
+                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
                             </div>
                         </div>
-                        <!-- <div class="w-px h-full bg-neutral-300"></div> -->
+                        <div class="w-px h-full bg-neutral-300"></div>
+                    </div>
+                    <div class="pt-1 pb-8">
+                        <p class="text-md mb-1 text-neutral-500">Septembre 2025</p>
+                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude dans l'Informatique (Spécialisation Intelligence Artificielle & Data)</p>
+                        <p class="text-lg text-neutral-800">Actuellement étudiant à <strong>Ynov Campus</strong>, je poursuis une formation spécialisée en informatique, axée sur l'<strong>intelligence artificielle</strong> et la <strong>data</strong>, afin de développer des compétences avancées dans ces domaines innovants.</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex flex-col items-center mr-4">
+                        <div>
+                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+                            </div>
+                        </div>
+                        <div class="w-px h-full bg-neutral-300"></div>
                     </div>
                     <div class="pt-1">
-                        <p class="text-md mb-1 text-neutral-500">Septembre 2026</p>
-                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-rose-100 text-rose-800">Prochainement</span><span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-primary-100 text-primary-800">Souhait</span>
-                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude dans l'Intelligence Artificiel & Data</p>
-                        <p class="text-lg text-neutral-800">Je souhaite d'abord poursuivre des études dans l'<strong>intelligence artificel</strong>, puis me tourner vers l'<strong>entrepreneuriat</strong> afin de <strong>devenir entrepreneur</strong>.</p>
+                        <p class="text-md mb-1 text-neutral-500">Juillet 2028</p>
+                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-green-100 text-green-800">À venir</span>
+                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Lancement d'un projet entrepreneurial</p>
+                        <p class="text-lg text-neutral-800">Mon objectif est de lancer mon propre projet dans le domaine de la <strong>technologie</strong> et de l'<strong>innovation</strong>, en mettant à profit mes compétences.</p>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 </template>
