@@ -1,6 +1,5 @@
 <script setup>
     import Hypertext from './partials/Hypertext.vue';
-    import Heading from './partials/Heading.vue';
 
     import {
         createScrollRevealDirective
@@ -18,84 +17,93 @@
 </script>
 
 <template>
-    <section id="career" v-scroll-reveal>
-        <div class="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-            <Heading text="MON PARCOURS PROFESSIONNEL ET SCOLAIRE." border />
-            <div class="py-4">
-                <div class="flex">
-                    <div class="flex flex-col items-center mr-4">
-                        <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+    <section id="career" v-scroll-reveal class="bg-gradient-to-br from-neutral-900 to-neutral-800 text-white py-16">
+        <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+            <!-- Sticky sidebar -->
+            <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+                <p class="ml-2 text-rose-400 uppercase tracking-loose font-semibold">Mon Parcours</p>
+                <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 font-bold">
+                    Parcours Professionnel et Scolaire
+                </p>
+                <p class="text-lg md:text-xl text-neutral-300 mb-4">
+                    Découvrez mon évolution académique et professionnelle, de mes premiers diplômes à mes projets futurs dans le domaine de la technologie et de l'intelligence artificielle.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+                <div class="container mx-auto w-full h-full">
+                    <div class="relative wrap overflow-hidden p-10 h-full">
+                        <!-- Vertical line -->
+                        <div class="border-2-2 border-rose-400 absolute h-full border"
+                            style="right: 50%; border: 2px solid #fb7185; border-radius: 1%;"></div>
+                        <div class="border-2-2 border-rose-400 absolute h-full border"
+                            style="left: 50%; border: 2px solid #fb7185; border-radius: 1%;"></div>
+
+                        <!-- Item 1 - Right -->
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <p class="mb-3 text-lg text-rose-400">Juillet 2021</p>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Diplôme - Brevet des collèges</h4>
+                                <p class="text-base md:text-lg leading-relaxed text-neutral-300">
+                                    Obtention du brevet des collèges avec <strong class="text-white">Mention Très Bien</strong>.
+                                </p>
                             </div>
                         </div>
-                        <div class="w-px h-full bg-rose-300"></div>
-                    </div>
-                    <div class="pt-1 pb-8">
-                        <p class="text-md text-neutral-500">Juillet 2021</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Diplôme - Brevet des collèges</p>
-                        <p class="text-lg text-neutral-800">Obtention du brevet des collèges avec <strong>Mention Très
-                                Bien</strong>.</p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex flex-col items-center mr-4">
-                        <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+
+                        <!-- Item 2 - Left -->
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-left">
+                                <p class="mb-3 text-lg text-rose-400">Juillet 2022 - {{ getMonth() }} {{ new Date().getFullYear() }}</p>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Groupe Walyverse</h4>
+                                <p class="text-base md:text-lg leading-relaxed text-neutral-300">
+                                    Groupe de serveurs de jeux axé sur le jeu <strong class="text-white">Minecraft</strong>. Mes principales fonctions sont d'assurer l'intégrité de la communauté à travers le rôle d'<strong class="text-white">Administrateur</strong>, mais aussi de développer différentes fonctionnalités permettant d'enrichir notre offre de contenu en tant que <strong class="text-white">Développeur</strong>.
+                                    <Hypertext class="text-rose-400 hover:text-rose-300" text="En savoir plus sur Walyverse" href="https://walyverse.fr" target />
+                                </p>
                             </div>
                         </div>
-                        <div class="w-px h-full bg-rose-300"></div>
-                    </div>
-                    <div class="pt-1 pb-8">
-                        <p class="text-md text-neutral-500">Juillet 2022 - {{ getMonth() }} {{ new Date().getFullYear() }}</p>
-                        <p class="mb-2 text-xl text-neutral-800 font-sans font-bold">Groupe Walyverse</p>
-                        <p class="text-lg text-neutral-800">Groupe de serveurs de jeux axé sur le jeu <strong>Minecraft</strong>. Mes principales fonctions sont d'assurer l'intégrité de la communauté à travers le rôle d'<strong>Administrateur</strong>, mais aussi de développer différentes fonctionnalités permettant d'enrichir notre offre de contenu en tant que <strong>Développeur</strong>. <Hypertext text="En savoir plus sur Walyverse" href="https://walyverse.fr" target /></p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex flex-col items-center mr-4">
-                        <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+
+                        <!-- Item 3 - Right -->
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <p class="mb-3 text-lg text-rose-400">Juillet 2025</p>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Diplôme Baccalauréat</h4>
+                                <p class="text-base md:text-lg leading-relaxed text-neutral-300">
+                                    Obtention du Baccalauréat avec <strong class="text-white">Mention Assez Bien</strong>.
+                                </p>
                             </div>
                         </div>
-                        <div class="w-px h-full bg-rose-300"></div>
-                    </div>
-                    <div class="pt-1 pb-8">
-                        <p class="text-md mb-1 text-neutral-500">Juillet 2025</p>
-                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Diplôme Baccalauréat</p>
-                        <p class="text-lg text-neutral-800">Obtention du Baccalauréat avec <strong>Mention Assez Bien</strong>.</p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex flex-col items-center mr-4">
-                        <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+
+                        <!-- Item 4 - Left -->
+                        <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4">
+                                <p class="mb-3 text-lg text-rose-400">Septembre 2025</p>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl text-left">Étude dans l'Informatique (Spécialisation IA & Data)</h4>
+                                <p class="text-base md:text-lg leading-relaxed text-neutral-300">
+                                    Actuellement étudiant à <strong class="text-white">Ynov Campus</strong>, je poursuis une formation spécialisée en informatique, axée sur l'<strong class="text-white">intelligence artificielle</strong> et la <strong class="text-white">data</strong>, afin de développer des compétences avancées dans ces domaines innovants.
+                                </p>
                             </div>
                         </div>
-                        <div class="w-px h-full bg-neutral-300"></div>
-                    </div>
-                    <div class="pt-1 pb-8">
-                        <p class="text-md mb-1 text-neutral-500">Septembre 2025</p>
-                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Étude dans l'Informatique (Spécialisation Intelligence Artificielle & Data)</p>
-                        <p class="text-lg text-neutral-800">Actuellement étudiant à <strong>Ynov Campus</strong>, je poursuis une formation spécialisée en informatique, axée sur l'<strong>intelligence artificielle</strong> et la <strong>data</strong>, afin de développer des compétences avancées dans ces domaines innovants.</p>
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="flex flex-col items-center mr-4">
-                        <div>
-                            <div class="flex items-center justify-center w-5 h-5 bg-rose-300 my-1 rounded-full">
+
+                        <!-- Item 5 - Right -->
+                        <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                            <div class="order-1 w-5/12"></div>
+                            <div class="order-1 w-5/12 px-1 py-4 text-right">
+                                <p class="mb-3 text-lg text-rose-400">Juillet 2028</p>
+                                <span class="inline-block text-base font-medium mb-2 px-3 py-1 rounded-full bg-green-500/20 text-green-400 border border-green-500/30">À venir</span>
+                                <h4 class="mb-3 font-bold text-xl md:text-3xl">Lancement d'un projet entrepreneurial</h4>
+                                <p class="text-base md:text-lg leading-relaxed text-neutral-300">
+                                    Mon objectif est de lancer mon propre projet dans le domaine de la <strong class="text-white">technologie</strong> et de l'<strong class="text-white">innovation</strong>, en mettant à profit mes compétences.
+                                </p>
                             </div>
                         </div>
-                        <div class="w-px h-full bg-neutral-300"></div>
-                    </div>
-                    <div class="pt-1">
-                        <p class="text-md mb-1 text-neutral-500">Juillet 2028</p>
-                        <span class="text-medium font-medium mr-2 px-2.5 py-1 rounded-full bg-green-100 text-green-800">À venir</span>
-                        <p class="mb-2 mt-1 text-xl text-neutral-800 font-sans font-bold">Lancement d'un projet entrepreneurial</p>
-                        <p class="text-lg text-neutral-800">Mon objectif est de lancer mon propre projet dans le domaine de la <strong>technologie</strong> et de l'<strong>innovation</strong>, en mettant à profit mes compétences.</p>
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
 </template>
