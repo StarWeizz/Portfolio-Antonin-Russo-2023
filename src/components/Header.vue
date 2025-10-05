@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="border-l relative lg:w-1/3" v-scroll-reveal-right>
-                    <div class="p-16">
-                        <img class="object-cover w-full h-56 rounded shadow sm:h-96 ease-in-out duration-100 hover:scale-110"
+                    <div class="p-16 flex justify-center items-center align-middle h-full">
+                        <img class="object-cover h-56 rounded shadow sm:h-96 ease-in-out duration-100 hover:scale-110"
                             :src="imgHeader" alt="" />
                     </div>
                 </div>
