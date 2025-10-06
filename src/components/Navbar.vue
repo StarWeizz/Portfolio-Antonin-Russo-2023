@@ -53,7 +53,7 @@
                         </svg>
                     </button>
                     <div v-if="isMenuOpen" class="absolute top-0 left-0 w-full">
-                        <div class="bg-gray-800 z-10 pl-2 pt-1 pb-2 relative">
+                        <div class="bg-white z-10 pl-2 pt-1 pb-2 relative">
                             <div class="flex items-center justify-between mb-4">
                                 <div>
                                     <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">

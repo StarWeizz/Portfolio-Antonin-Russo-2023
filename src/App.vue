@@ -9,8 +9,6 @@
   import BackToTop from './components/BackToTop.vue';
 import { onMounted } from 'vue';
 
-  import backgroundImg from './assets/img/background_top.jpg';
-
   // Ajoutez une fonction pour exécuter le script après que le DOM soit chargé
   onMounted(() => {
   const isPC = () => {
@@ -26,8 +24,9 @@ import { onMounted } from 'vue';
     return flag;
   };
 
+  const text = document.querySelector('.mouseover_text');
+
   if (isPC()) {
-    const text = document.querySelector('.mouseover_text');
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
     let element = document.querySelectorAll('.mouseover_text span');
@@ -45,12 +44,15 @@ import { onMounted } from 'vue';
 
     document.addEventListener("scroll", function () {
       text.style.opacity = '0';
-      
+
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         text.style.opacity = '1';
       }, 150);
     });
+  } else {
+    // Cacher complètement l'élément sur mobile/tablette
+    text.style.display = 'none';
   }
 });
 
