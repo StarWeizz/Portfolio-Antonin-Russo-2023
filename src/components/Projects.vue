@@ -118,7 +118,7 @@
             tags: ['Vue.JS', 'HTML', 'TailwindCSS', 'Lenis'],
             img: imgDockWear,
             status: ['Suspendu'],
-            link: '#',
+            link: 'https://lustrous-mochi-381e08.netlify.app/',
         },
         {
             name: 'Ayurveda Art & Beauté',
