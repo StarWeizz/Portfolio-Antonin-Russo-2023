@@ -6,9 +6,8 @@
   import Projects from './components/Projects.vue';
   import Career from './components/Career.vue';
   import TechnologiesAndTools from './components/TechnologiesAndTools.vue';
+  import BackToTop from './components/BackToTop.vue';
 import { onMounted } from 'vue';
-
-  import backgroundImg from './assets/img/background_top.jpg';
 
   // Ajoutez une fonction pour exécuter le script après que le DOM soit chargé
   onMounted(() => {
@@ -25,8 +24,9 @@ import { onMounted } from 'vue';
     return flag;
   };
 
+  const text = document.querySelector('.mouseover_text');
+
   if (isPC()) {
-    const text = document.querySelector('.mouseover_text');
     text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
     let element = document.querySelectorAll('.mouseover_text span');
@@ -44,12 +44,15 @@ import { onMounted } from 'vue';
 
     document.addEventListener("scroll", function () {
       text.style.opacity = '0';
-      
+
       clearTimeout(scrollTimer);
       scrollTimer = setTimeout(() => {
         text.style.opacity = '1';
       }, 150);
     });
+  } else {
+    // Cacher complètement l'élément sur mobile/tablette
+    text.style.display = 'none';
   }
 });
 
@@ -59,8 +62,7 @@ import { onMounted } from 'vue';
     
   <h2 class="mouseover_text mix-blend-difference">Antonin-Russo-</h2>
 
-  <div :style="{ backgroundImage: `url(${backgroundImg})` }" 
-       class="bg-cover bg-center min-h-screen relative">
+  <div class="bg-white">
       <Navbar />
 
       <Header />
@@ -76,6 +78,8 @@ import { onMounted } from 'vue';
   </div>
 
   <Footer />
+
+  <BackToTop />
 
 </template>
 

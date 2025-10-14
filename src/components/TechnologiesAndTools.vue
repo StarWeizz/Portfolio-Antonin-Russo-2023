@@ -17,6 +17,8 @@
   import IconVSCode from './icons/IconVSCode.vue';
   import IconIA from './icons/IconIA.vue';
   import IconGithub from './icons/IconGithub.vue';
+  import IconClaude from './icons/IconClaude.vue';
+  import IconGo from './icons/IconGo.vue';
 
   import Heading from './partials/Heading.vue';
 
@@ -54,6 +56,8 @@
     { name: 'VSCODE', component: IconVSCode, delay: 1300 },
     { name: 'INTELLIGENCE ARTIFICIELLE', component: IconIA, delay: 1100 },
     { name: 'GITHUB', component: IconGithub, delay: 1000 },
+    { name: 'CLAUDE', component: IconClaude, delay: 1400 },
+    { name: 'GO', component: IconGo, delay: 1400 },
   ];
 </script>
 

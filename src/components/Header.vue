@@ -1,5 +1,4 @@
 <script setup>
-    import IconDownload from "./icons/IconDownload.vue";
     import Logo from "../assets/img/logo.png";
     import {
         createScrollRevealDirective
@@ -21,14 +20,14 @@
 
 <template>
     <section id="header">
-        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 ">
+        <div class="px-4 md:px-24 lg:px-8 ">
             <div class="flex flex-col justify-between lg:flex-row">
-                <div class="mb-10 lg:w-2/3 lg:pr-5 lg:mb-0" v-scroll-reveal-left>
+                <div class="lg:w-2/3 lg:pr-5 lg:mb-0 p-16 py-32" v-scroll-reveal-left>
                     <div class="mb-4">
                         <h2 class="mb-8 font-sans text-4xl font-extrabold text-neutral-800 sm:text-6xl sm:leading-none">
-                            <span class="text-slate-100 drop-shadow-xl">Antonin RUSSO</span>, <br>Développeur <span class="inline-block text-orange-300 drop-shadow-xl">Full-Stack</span><br
+                            <span class="text-secondary-400">Antonin RUSSO</span>, <br>Développeur <span class="inline-block text-orange-300 ">Full-Stack</span><br
                                 class="hidden md:block" />
-                            en <span class="inline-block text-primary-300 drop-shadow-xl">Apprentissage</span>
+                            en <span class="inline-block text-primary-300">Apprentissage</span>
                             continu.
                         </h2>
                         <p class="text-2xl text-neutral-800">
@@ -43,17 +42,10 @@
                             des questions !
                         </p>
                     </div>
-                    <div class="flex flex-row items-center">
-                        <button type="button"
-                            class="text-neutral-800 bg-secondary-200 cursor-not-allowed hover:bg-secondary-300 font-medium rounded text-md px-4 py-2 text-center inline-flex items-center">
-                            Télécharger mon CV
-                            <!-- <IconDownload class="ml-2" /> -->
-                        </button>
-                    </div>
                 </div>
-                <div class="relative lg:w-1/3" v-scroll-reveal-right>
-                    <div class="p-8">
-                        <img class="object-cover w-full h-56 rounded shadow sm:h-96 skew-y-1 ease-in-out duration-100 hover:scale-110"
+                <div class="border-l relative hidden xl:block lg:w-1/3" v-scroll-reveal-right>
+                    <div class="p-16 flex justify-center items-center align-middle h-full">
+                        <img class="object-cover h-56 rounded shadow sm:h-96 ease-in-out duration-100 hover:scale-110"
                             :src="imgHeader" alt="" />
                     </div>
                 </div>
