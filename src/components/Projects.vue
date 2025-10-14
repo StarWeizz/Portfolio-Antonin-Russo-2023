@@ -21,6 +21,7 @@
     import imgSTRTIFY from '../assets/img/srtify_2025.png';
     import imgEldoria from '../assets/img/eldoria_2025.png';
     import imgWalyverse from '../assets/img/walyverse.png';
+    import imgPEACalculatorGo from '../assets/img/pea_calculator_2025.png';
 
     const projects = [
         {
@@ -29,8 +30,8 @@
             date: 'Septembre 2023',
             tags: ['HTML', 'TailwindCSS', 'Vue.JS'],
             img: imgPortfolio,
-            link: '',
-            status: ['Maintenu', 'Terminé']
+            link: 'https://github.com/StarWeizz/Portfolio-Antonin-Russo-2023',
+            status: ['Maintenu', 'Terminé', 'Public']
         },
         {
             name: 'Boutique stripe dans Minecraft',
@@ -42,7 +43,7 @@
             link: '',
         },
         {
-            name: 'Simulateur PEA',
+            name: 'Simulateur PEA en Python',
             description: "Simulateur du compte PEA (Plan Épargne Investissement) réalisé en python. L'utilisateur est invité à renseigner le montant souhaité, son investissement mensuel ainsi que le rendement annuel et le simulateur lui donnera la durée pour atteindre le montant souhaité sur le compte. Le simulateur prend en compte l'imposition.",
             date: 'Décembre 2024',
             tags: ['Python'],
@@ -65,7 +66,7 @@
             date: 'Septembre 2025',
             tags: ['Go', 'CLI'],
             img: imgEldoria,
-            status: ['Terminé'],
+            status: ['Terminé', 'Public'],
             link: 'https://github.com/StarWeizz/projet-red_Eldoria',
         },
         {
@@ -83,7 +84,7 @@
             date: 'Mai 2022',
             tags: ['HTML', 'CSS', 'SASS', 'PHP', 'MySQL'],
             img: imgCroqueMilhoc,
-            status: ['Abandonné', 'Terminé'],
+            status: ['Abandonné', 'Terminé', 'Privé'],
             link: '#',
         },
         {
@@ -94,6 +95,15 @@
             img: imgSIVIBE,
             status: ['Terminé', 'Maintenu', 'Privé'],
             link: '#',
+        },
+        {
+            name: 'Simulateur PEA en Go',
+            description: "Simulateur du compte PEA (Plan Épargne Investissement) en ligne de commandes réalisé en Go. L'utilisateur est invité à renseigner le montant souhaité, son investissement mensuel ainsi que le rendement annuel et le simulateur lui donnera la durée pour atteindre le montant souhaité sur le compte. Le simulateur prend en compte l'imposition.",
+            date: 'Octobre 2025',
+            tags: ['Go', 'CLI'],
+            img: imgPEACalculatorGo,
+            status: ['Terminé', 'Public'],
+            link: 'https://github.com/StarWeizz/Simulateur-PEA-Go',
         },
         {
             name: 'Mod Minecraft Forge 1.12.2',
@@ -146,7 +156,7 @@
             date: 'Février 2024',
             tags: ['Java'],
             img: imgBBA,
-            status: ['Terminé', 'Maintenu'],
+            status: ['Terminé', 'Maintenu', 'Public'],
             link: 'https://www.spigotmc.org/resources/1-17-1-21-4-break-budding-amethyst.113205/',
         },
         {
@@ -233,6 +243,8 @@
         return 'bg-orange-100 text-orange-800'
         case 'Privé':
         return 'bg-purple-100 text-purple-800';
+        case 'Public':
+        return 'bg-teal-100 text-teal-800';
         default:
         return 'bg-gray-100 text-gray-800';
     }
