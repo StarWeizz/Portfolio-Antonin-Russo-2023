@@ -4,6 +4,7 @@
     import SmallTag from './partials/SmallTag.vue';
 
     import imgPortfolio from '../assets/img/portfolio_ar_2023.png';
+    import imgNeoGames from '../assets/img/neogames_2025.png';
     import imgCroqueMilhoc from '../assets/img/croquemilhoc_2023.png';
     import imgSIVIBE from '../assets/img/sivibe_2023.png';
     import imgModSow2 from '../assets/img/mod_sow2_2023.png';
@@ -22,6 +23,9 @@
     import imgEldoria from '../assets/img/eldoria_2025.png';
     import imgWalyverse from '../assets/img/walyverse.png';
     import imgPEACalculatorGo from '../assets/img/pea_calculator_2025.png';
+    import imgEdenAI from '../assets/img/edenAI_2025.png';
+    import imgFestiDex from '../assets/img/festidex_2025.png';
+    import imgCRMAyurJyotish from '../assets/img/crmayurjyotish_2026.png';
 
     const projects = [
         {
@@ -32,6 +36,33 @@
             img: imgPortfolio,
             link: 'https://github.com/StarWeizz/Portfolio-Antonin-Russo-2023',
             status: ['Maintenu', 'Terminé', 'Public']
+        },
+        {
+            name: 'NeoGames',
+            description: "NeoGames est une application de gestion de magasin de jeux vidéo qui permet de gérer les ventes, le stock, les clients et les promotions. L'application offre différentes interfaces selon le rôle de l'utilisateur (Client, Vendeur, Préparateur, Gérant).",
+            date: 'Décembre 2025',
+            tags: ['Java', 'JavaFX', 'Maven'],
+            img: imgNeoGames,
+            link: 'https://github.com/StarWeizz/NeoGames',
+            status: ['Terminé', 'Public']
+        },
+        {
+            name: 'FestiDex',
+            description: "FestiDex est une application web qui permet aux utilisateurs de découvrir des artistes émergents et de voir les concerts à venir. L'application utilise des données provenant de l'API pour fournir des informations à jour sur les événements musicaux.",
+            date: 'Décembre 2025',
+            tags: ['GO', 'HTML', 'CSS', 'JavaScript'],
+            img: imgFestiDex,
+            link: 'https://github.com/StarWeizz/FestiDex',
+            status: ['Terminé', 'Public']
+        },
+        {
+            name: 'CRM AyurJyotish',
+            description: "CRM AyurJyotish est une application web de gestion de la relation client (CRM) conçue spécifiquement pour les praticiens d'Ayurveda et d'astrologie indienne. L'application permet de gérer les informations des clients, les rendez-vous, les consultations et les paiements.",
+            date: 'Janvier 2026',
+            tags: ['HTML', 'TailwindCSS', 'Laravel v12.47', 'MySQL', 'PHP'],
+            img: imgCRMAyurJyotish,
+            link: 'https://github.com/StarWeizz/CRM_AyurJyotish',
+            status: ['En cours', 'Privé']
         },
         {
             name: 'Boutique stripe dans Minecraft',
@@ -49,6 +80,15 @@
             tags: ['Python'],
             img: imgPEACalculator,
             status: ['En cours'],
+            link: '',
+        },
+        {
+            name: 'Eden AI',
+            description: "Application moderne de suivi nutritionnel avec intelligence artificielle intégrée. Eden AI permet aux utilisateurs de suivre leur alimentation quotidienne, d'analyser les valeurs nutritionnelles de leurs repas et de recevoir des recommandations personnalisées pour atteindre leurs objectifs de santé.",
+            date: 'Octobre 2025',
+            tags: ['Node.JS', 'Express', 'MongoDB', 'React Native', 'Vite', 'TypeScript', 'TailwindCSS', 'Expo', 'OpenAI', 'API', 'JWT'],
+            img: imgEdenAI,
+            status: ['Suspendu', 'Privé'],
             link: '',
         },
         {
@@ -189,8 +229,8 @@
         {
             name: 'Walyverse',
             description: "Création de modules et plugins pour le groupe Walyverse, spécialiste des serveurs Minecraft.",
-            date: 'Juillet 2023 - 2025',
-            tags: ['Java', 'DevOPS', 'Docker', 'Kubernetes', 'Bash', 'Linux'],
+            date: 'Juillet 2023 - 2026',
+            tags: ['Java', 'DevOPS', 'Docker', 'Kubernetes', 'Bash', 'Linux', 'Web', 'APIs', 'Discord Bots', 'React', 'Reverse Proxy', 'Nginx', 'Node.JS', 'Express', 'MongoDB', 'JavaScript', 'and more...'],
             img: imgWalyverse,
             status: ['Maintenu', 'Privé'],
             link: '#',
