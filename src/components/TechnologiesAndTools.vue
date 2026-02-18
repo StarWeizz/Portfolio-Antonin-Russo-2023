@@ -19,6 +19,7 @@
   import IconGithub from './icons/IconGithub.vue';
   import IconClaude from './icons/IconClaude.vue';
   import IconGo from './icons/IconGo.vue';
+  import IconStripe from './icons/iconStripe.vue';
 
   import Heading from './partials/Heading.vue';
 
@@ -58,6 +59,7 @@
     { name: 'GITHUB', component: IconGithub, delay: 1000 },
     { name: 'CLAUDE', component: IconClaude, delay: 1400 },
     { name: 'GO', component: IconGo, delay: 1400 },
+    { name: 'Stripe', component: IconStripe, delay: 1400 }
   ];
 </script>
 
