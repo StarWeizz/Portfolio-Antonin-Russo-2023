@@ -1,11 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --or: #F4500A;
+  --or-light: #fff0e8;
+  --ink: #0e0e0e;
+  --bg: #f9f8f6;
+  --border: #e3e3e3;
+  --muted: #888;
+}
+
 @layer base {
-    html {
-        font-family: 'League Spartan', sans-serif;
-    }
+  html {
+    font-family: 'Figtree', sans-serif;
+    background-color: var(--bg);
+    color: var(--ink);
+    cursor: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* Custom cursor */
+.cursor {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: var(--or);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+  mix-blend-mode: multiply;
+}
+.cursor.big {
+  width: 36px;
+  height: 36px;
+  background: rgba(244, 80, 10, 0.2);
+}
+
+/* Scroll animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ripple button pattern */
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+.btn-ripple .ripple-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--or);
+  border-radius: inherit;
+  transform: translateX(-102%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 0;
+}
+.btn-ripple:hover .ripple-bg {
+  transform: translateX(0);
+}
+.btn-ripple > *:not(.ripple-bg) {
+  position: relative;
+  z-index: 1;
 }

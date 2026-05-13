@@ -1,7 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 export default {
   content: [
     "./index.html",
@@ -9,20 +5,17 @@ export default {
   ],
   theme: {
     extend: {
-      
-    },
-    colors: {
-      primary: colors.violet,
-      secondary: colors.sky,
-      neutral: colors.slate,
-      
-      white: colors.white,
-      rose: colors.rose,
-      ...colors
-    },
-    screens: {
-      'xs': '475px',
-      ...defaultTheme.screens,
+      fontFamily: {
+        syne: ['Syne', 'sans-serif'],
+        figtree: ['Figtree', 'sans-serif'],
+      },
+      colors: {
+        brand: {
+          DEFAULT: '#F4500A',
+          light: '#fff0e8',
+          hover: '#ff6a2a',
+        },
+      },
     },
   },
   plugins: [],

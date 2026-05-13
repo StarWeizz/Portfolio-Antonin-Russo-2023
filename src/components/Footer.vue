@@ -1,33 +1,25 @@
 <script setup>
-    import IconLinkedIn from "./icons/IconLinkedIn.vue"
-    import IconInstagram from "./icons/IconInstagram.vue";
-    import IconGithub from "./icons/IconGithub.vue";
-
-    const socialLinks = [{
-            link: "https://instagram.com/r.antonin.pro",
-            icon: IconInstagram
-        },
-        {
-            link: "https://linkedin.com/in/antonin-russo-33096626b",
-            icon: IconLinkedIn
-        },
-        {
-            link: "https://github.com/StarWeizz",
-            icon: IconGithub
-        },
-    ];
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 </script>
 
 <template>
-    <div class="bg-neutral-100">
-        <div class="lg:max-w-screen-2xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-            <p class="text-gray-500 text-sm text-center sm:text-left">&copy; {{ new Date().getFullYear() }} Antonin
-                RUSSO
-            </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a v-for="(social, index) in socialLinks" :ket="index" :href="social.link" target="_blank" class="ml-3 text-neutral-800">
-                    <component :is="social.icon" class="max-h-5" /></a>
-            </span>
-        </div>
+  <footer class="border-t border-[#e3e3e3] px-8 md:px-11 py-5 flex items-center justify-between bg-white">
+    <span class="font-syne font-extrabold text-[14px] text-[#0e0e0e]">
+      Antonin <span class="text-[#F4500A]">Russo</span>
+    </span>
+    <span class="font-figtree text-[11px] text-[#bbb]">
+      2026 · {{ t('footer.copy') }}
+    </span>
+    <div class="flex gap-4">
+      <a v-for="link in [
+           { label: 'GitHub',    href: 'https://github.com/StarWeizz' },
+           { label: 'LinkedIn',  href: 'https://linkedin.com/in/antonin-russo-33096626b' },
+           { label: 'Instagram', href: 'https://instagram.com/r.antonin.pro' },
+         ]" :key="link.label" :href="link.href" target="_blank"
+         class="font-figtree text-[11px] text-[#999] no-underline transition-colors hover:text-[#F4500A]">
+        {{ link.label }}
+      </a>
     </div>
+  </footer>
 </template>
