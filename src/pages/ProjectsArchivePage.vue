@@ -1,12 +1,9 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 import { projects, statusColors } from '../data/projects.js'
 import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
-
-const { t } = useI18n()
 
 const allTags = computed(() => {
   const set = new Set()
@@ -30,14 +27,14 @@ const getStatus = (p) => statusColors[p.statusColor] || statusColors.blue
   <main class="max-w-screen-xl mx-auto px-8 md:px-11 py-16">
 
     <div class="flex items-center gap-3 mb-3">
-      <RouterLink to="/" class="font-figtree text-[12px] text-[#aaa] no-underline hover:text-[#F4500A] transition-colors">
-        {{ t('archive.back') }}
+      <RouterLink to="/" class="font-figtree text-[12px] text-[#aaa] no-underline hover:text-[#4a6fa5] transition-colors">
+        Accueil
       </RouterLink>
       <span class="text-[#e3e3e3]">/</span>
-      <span class="font-figtree text-[12px] text-[#888]">{{ t('archive.title') }}</span>
+      <span class="font-figtree text-[12px] text-[#888]">Tous les projets</span>
     </div>
 
-    <h1 class="font-syne font-extrabold text-[40px] tracking-[-2px] text-[#0e0e0e] mb-8">{{ t('archive.title') }}</h1>
+    <h1 class="font-syne font-extrabold text-[40px] tracking-[-2px] text-[#0e0e0e] mb-8">Tous les projets</h1>
 
     <div class="flex flex-wrap gap-2 mb-10">
       <button v-for="tag in allTags.slice(0, 20)" :key="tag"
@@ -45,7 +42,7 @@ const getStatus = (p) => statusColors[p.statusColor] || statusColors.blue
               class="font-syne text-[10px] font-bold px-3 py-[6px] rounded-full border transition-all duration-200"
               :class="activeTag === tag
                 ? 'bg-[#0e0e0e] text-white border-[#0e0e0e]'
-                : 'bg-white text-[#888] border-[#e3e3e3] hover:border-[#F4500A] hover:text-[#F4500A]'">
+                : 'bg-white text-[#888] border-[#e3e3e3] hover:border-[#4a6fa5] hover:text-[#4a6fa5]'">
         {{ tag }}
       </button>
     </div>
@@ -53,7 +50,7 @@ const getStatus = (p) => statusColors[p.statusColor] || statusColors.blue
     <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <RouterLink v-for="project in filtered" :key="project.slug"
                   :to="`/projects/${project.slug}`"
-                  class="group bg-white border border-[#e3e3e3] rounded-xl p-4 no-underline transition-all duration-200 hover:border-[#F4500A] hover:shadow-md">
+                  class="group bg-white border border-[#e3e3e3] rounded-xl p-4 no-underline transition-all duration-200 hover:border-[#4a6fa5] hover:shadow-md">
         <div class="flex items-start justify-between mb-2">
           <span class="font-syne font-bold text-[13px] text-[#0e0e0e] leading-tight">{{ project.name }}</span>
           <span class="font-figtree text-[9px] font-semibold px-2 py-[2px] rounded-full flex-shrink-0 ml-2"

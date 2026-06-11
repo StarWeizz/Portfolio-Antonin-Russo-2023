@@ -1,6 +1,5 @@
 <script setup>
 import { computed } from 'vue'
-import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 import { statusColors } from '../data/projects.js'
 
@@ -9,7 +8,6 @@ const props = defineProps({
   featured: { type: Boolean, default: false },
 })
 
-const { t } = useI18n()
 const status = computed(() => statusColors[props.project.statusColor] || statusColors.blue)
 </script>
 
@@ -23,10 +21,10 @@ const status = computed(() => statusColors[props.project.statusColor] || statusC
            :src="project.images[0]" :alt="project.name"
            class="w-full h-full object-cover transition-transform duration-400 group-hover:scale-[1.04]" />
       <div v-else class="w-full h-full bg-gradient-to-br from-[#f0ede8] to-[#e8e0d8] flex items-center justify-center">
-        <span class="font-syne font-bold text-[40px] text-[#F4500A]/20">{{ project.name.charAt(0) }}</span>
+        <span class="font-syne font-bold text-[40px] text-[#4a6fa5]/20">{{ project.name.charAt(0) }}</span>
       </div>
       <div class="absolute inset-0 bg-[#0e0e0e]/45 opacity-0 group-hover:opacity-100 transition-opacity duration-250 flex items-center justify-center">
-        <div class="w-11 h-11 rounded-full bg-[#F4500A] flex items-center justify-center scale-[0.7] opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-[cubic-bezier(.16,1,.3,1)]">
+        <div class="w-11 h-11 rounded-full bg-[#4a6fa5] flex items-center justify-center scale-[0.7] opacity-0 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-[cubic-bezier(.16,1,.3,1)]">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
       </div>
@@ -51,8 +49,8 @@ const status = computed(() => statusColors[props.project.statusColor] || statusC
       </div>
 
       <div class="flex items-center justify-between border-t border-[#f2f2f2] pt-3.5">
-        <span class="font-syne text-[12px] font-bold text-[#F4500A] flex items-center gap-[5px] transition-[gap] duration-200 group-hover:gap-[9px]">
-          {{ t('projects.case_study') }}
+        <span class="font-syne text-[12px] font-bold text-[#4a6fa5] flex items-center gap-[5px] transition-[gap] duration-200 group-hover:gap-[9px]">
+          Voir le projet
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </span>
         <span class="font-figtree text-[10px] font-semibold px-2.5 py-1 rounded-full"
