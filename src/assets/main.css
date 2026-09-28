@@ -1,34 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,50..150,300..900;1,50..150,300..900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Nothing+You+Could+Do&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --ink: #0f172a;
-  --accent: #4a6fa5;
-  --accent-light: #eff6ff;
-  --bg: #ffffff;
-  --bg-subtle: #f8fafc;
-  --border: #e2e8f0;
-  --muted: #64748b;
-  --muted-light: #94a3b8;
-}
-
 @layer base {
-  html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background-color: var(--bg);
-    color: var(--ink);
+  :root {
+    color-scheme: light;
+    --paper: #F4F4F0;
+    --ink: #4B3BC4;
+    --ink-deep: #2A2270;
+    --accent: #EC4C78;
+    --accent-soft: rgba(236, 76, 120, .26);
+    --line: color-mix(in srgb, var(--ink) 35%, transparent);
+    --tape: rgba(222, 214, 190, .72);
+    --disp: "Anybody", "Arial Narrow", Impact, sans-serif;
+    --text: "Newsreader", Georgia, "Times New Roman", serif;
+    --hand: "Nothing You Could Do", "Segoe Print", "Bradley Hand", cursive;
   }
 
-  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink-deep);
+    font-family: var(--text);
+    font-size: 18px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+
+  /* Grain papier */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 50;
+    opacity: .13;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.2 0 0 0 0 0.4 0 0 0 1.2 -0.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  ::selection { background: var(--accent); color: var(--paper); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
 }
 
-.fade-up {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+@layer components {
+  .page { padding-inline: clamp(16px, 4.5vw, 64px); padding-bottom: 40px; }
+  .hand { font-family: var(--hand); color: var(--accent); font-size: 21px; line-height: 1.15; }
 }
