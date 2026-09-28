@@ -1,3 +1,13 @@
+/** @type {import('tailwindcss').Config} */
+const rawColors = require('tailwindcss/colors');
+const deprecatedColors = ['lightBlue', 'warmGray', 'trueGray', 'coolGray', 'blueGray'];
+const colors = Object.fromEntries(
+  Object.keys(rawColors)
+    .filter((key) => !deprecatedColors.includes(key))
+    .map((key) => [key, rawColors[key]])
+);
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: [
     "./index.html",
@@ -5,17 +15,20 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        syne: ['Syne', 'sans-serif'],
-        figtree: ['Figtree', 'sans-serif'],
-      },
-      colors: {
-        brand: {
-          DEFAULT: '#F4500A',
-          light: '#fff0e8',
-          hover: '#ff6a2a',
-        },
-      },
+
+    },
+    colors: {
+      primary: colors.violet,
+      secondary: colors.sky,
+      neutral: colors.slate,
+
+      white: colors.white,
+      rose: colors.rose,
+      ...colors
+    },
+    screens: {
+      'xs': '475px',
+      ...defaultTheme.screens,
     },
   },
   plugins: [],

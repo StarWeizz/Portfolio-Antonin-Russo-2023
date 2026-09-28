@@ -1,6 +1,33 @@
+<script setup>
+    import IconLinkedIn from "./icons/IconLinkedIn.vue"
+    import IconInstagram from "./icons/IconInstagram.vue";
+    import IconGithub from "./icons/IconGithub.vue";
+
+    const socialLinks = [{
+            link: "https://instagram.com/r.antonin.pro",
+            icon: IconInstagram
+        },
+        {
+            link: "https://linkedin.com/in/antonin-russo-33096626b",
+            icon: IconLinkedIn
+        },
+        {
+            link: "https://github.com/StarWeizz",
+            icon: IconGithub
+        },
+    ];
+</script>
+
 <template>
-  <footer class="border-t border-[#e2e8f0] px-8 md:px-14 lg:px-16 py-5 flex items-center justify-between bg-[#fafafa]">
-    <span class="text-[12px] text-[#94a3b8]">Antonin Russo · 2025</span>
-    <span class="text-[11px] text-[#cbd5e1]">Construit avec Vue.js</span>
-  </footer>
+    <div class="bg-neutral-100">
+        <div class="lg:max-w-screen-2xl mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">&copy; {{ new Date().getFullYear() }} Antonin
+                RUSSO
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                <a v-for="(social, index) in socialLinks" :ket="index" :href="social.link" target="_blank" class="ml-3 text-neutral-800">
+                    <component :is="social.icon" class="max-h-5" /></a>
+            </span>
+        </div>
+    </div>
 </template>

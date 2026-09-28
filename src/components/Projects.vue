@@ -26,8 +26,6 @@
     import imgEdenAI from '../assets/img/edenAI_2025.png';
     import imgFestiDex from '../assets/img/festidex_2025.png';
     import imgCRMAyurJyotish from '../assets/img/crmayurjyotish_2026.png';
-    import imgCOC from '../assets/img/coc_2026.png'
-    import imgBIRealEstate from '../assets/img/bi-realestate_2026.png';
 
     const projects = [
         {
@@ -38,15 +36,6 @@
             img: imgPortfolio,
             link: 'https://github.com/StarWeizz/Portfolio-Antonin-Russo-2023',
             status: ['Maintenu', 'Terminé', 'Public']
-        },
-        {
-            name: 'BI-RealEstate-DVF',
-            description: "Analyse des transactions immobilières françaises (DVF) via Python, Pandas et Scikit-learn. Prédiction de prix par Random Forest et visualisations cartographiques interactives sous Folium. Scraping d'annonces paruvendu.fr et enregistrement PostgreSQL, visualisation avec une page HTML et backend Express.",
-            date: 'Février 2026',
-            tags: ['HTML', 'Javascript', 'Express', 'Python', 'Pandas', 'Folium', 'Random Forest', 'Node.js', 'PostgreSQL', 'Jupyter'],
-            img: imgBIRealEstate,
-            link: 'https://github.com/StarWeizz/BI-RealEstate-DVF',
-            status: ['Terminé', 'Public']
         },
         {
             name: 'NeoGames',
@@ -74,15 +63,6 @@
             img: imgCRMAyurJyotish,
             link: 'https://github.com/StarWeizz/CRM_AyurJyotish',
             status: ['En cours', 'Privé']
-        },
-        {
-            name: 'Bot Discord Clash Of Clans',
-            description: "Bot Discord complet pour Clash of Clans, permettant la vérification automatique des membres, la synchronisation quotidienne des rôles et pseudos selon le grade, et la gestion simplifiée d’un serveur de clan.",
-            date: 'Février 2026',
-            tags: ['Discord.JS', 'Javascript', 'MongoDB'],
-            img: imgCOC,
-            link: 'https://github.com/StarWeizz/COC-bot',
-            status: ['Terminé', 'Maintenu', 'Privé']
         },
         {
             name: 'Boutique stripe dans Minecraft',
@@ -321,12 +301,12 @@
                     class="bg-white rounded ease-in-out duration-100 sm:hover:scale-105">
                     <a :href="project.link" target="_blank"  aria-label="Article"><img :src="project.img" class="object-cover w-full h-48 rounded" alt="" /></a>
                     <div class="py-5 max-w-full">
-                        <p class="text-md text-neutral-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <div class="text-md text-neutral-500 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                             <span>{{ project.date }}</span>
                             <div class="flex flex-wrap gap-2">
                                 <SmallTag v-for="(status, index) in project.status" :key="index" :name="status" :class="getStatusClass(status)" />
                             </div>
-                        </p>
+                        </div>
                         <a href="/" aria-label="Article"
                             class="inline-block mb-2 text-black transition-colors duration-200 hover:text-deep-purple-accent-700">
                             <p class="text-xl text-neutral-800 font-sans font-bold">{{ project.name }}</p>
