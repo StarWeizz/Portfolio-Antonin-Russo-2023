@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import SectionHeading from './SectionHeading.vue'
-import { projects, STATUS, img } from '../../data/projects'
+import { projects, STATUS, KIND, img } from '../../data/projects'
 
 const list = ref(null)
 const peek = ref(null)
@@ -84,8 +84,10 @@ onBeforeUnmount(() => removeEventListener('scroll', onScroll))
       >
         <span class="yr">{{ p.year }}</span>
         <span class="t">
+          <span v-if="p.fav" class="fav" title="Coup de cœur" aria-label="Coup de cœur">★</span>
           <a v-if="p.url" :href="p.url" target="_blank" rel="noopener">{{ p.title }} ↗</a>
           <template v-else>{{ p.title }}</template>
+          <span v-if="p.kind" class="kind">{{ KIND[p.kind] }}</span>
         </span>
         <span class="stack">{{ p.stack }}</span>
         <span class="st" :class="p.status">{{ STATUS[p.status] }}</span>
@@ -98,6 +100,7 @@ onBeforeUnmount(() => removeEventListener('scroll', onScroll))
       <img :src="img(current.img)" alt="">
       <div class="card">
         <div class="top"><h4>{{ current.title }}</h4><span class="pyr">{{ current.year }}</span></div>
+        <span v-if="current.kind" class="kind">{{ KIND[current.kind] }}</span>
         <p>{{ current.desc }}</p>
         <div class="pst">{{ current.stack }} · {{ STATUS[current.status] }}</div>
       </div>
@@ -116,9 +119,17 @@ li:hover { background: linear-gradient(transparent 20%, var(--accent-soft) 20% 8
 .yr { font-family: var(--disp); font-weight: 700; font-stretch: 60%; font-size: 22px; color: var(--ink); font-variant-numeric: tabular-nums; }
 .t { font-family: var(--disp); font-weight: 600; font-stretch: 90%; font-size: 21px; line-height: 1.1; color: var(--ink); }
 .t a { text-decoration: none; }
+.kind {
+  display: inline-block; margin-left: .6em; padding: 1px 7px 0; vertical-align: .2em;
+  font-family: var(--disp); font-stretch: 85%; font-weight: 600; font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); border: 1.5px solid currentColor; border-radius: 999px; white-space: nowrap;
+}
+.card .kind { margin: 8px 0 0; }
+.fav { color: var(--accent); font-size: .85em; margin-right: .35em; display: inline-block; transform: translateY(-.05em); }
 .stack { font-size: 15px; font-style: italic; }
 .st { font-size: 14px; text-align: right; }
 .st.pause, .st.wip { color: var(--accent); }
+.st.prod { color: var(--ink); font-weight: 600; }
 li.gone .t { text-decoration: line-through; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
 
 .peek { position: fixed; left: 0; top: 0; z-index: 60; width: 320px; margin: 0; pointer-events: none; opacity: 0; transition: opacity .2s ease; will-change: transform; }
