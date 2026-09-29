@@ -19,7 +19,6 @@ const portrait = img('antonin')
       <span class="disc"></span>
       <div class="duo">
         <img :src="portrait" alt="Portrait d'Antonin Russo">
-        <span class="dots"></span>
       </div>
       <svg class="arrow" viewBox="0 0 70 50" aria-hidden="true"><path d="M4 46 C 18 40, 30 30, 40 14 M40 14 l-10 3 M40 14 l1 10" /></svg>
       <span class="hand note">moi (le costume, c'est rare)</span>
@@ -44,9 +43,8 @@ const portrait = img('antonin')
 
 .portrait { position: relative; justify-self: center; width: min(100%, 420px); aspect-ratio: 1; }
 .disc { position: absolute; inset: 6% -4% -4% 6%; border-radius: 50%; background: var(--accent); mix-blend-mode: multiply; }
-.duo { position: absolute; inset: 0; background: var(--ink); clip-path: polygon(3% 2%, 97% 0, 100% 96%, 1% 100%); overflow: hidden; }
-.duo img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(1) contrast(1.35) brightness(1.08); mix-blend-mode: screen; }
-.dots { position: absolute; inset: 0; background: radial-gradient(circle, rgba(0,0,0,.18) 0 1px, transparent 1.6px) 0 0 / 5px 5px; mix-blend-mode: multiply; }
+.duo { position: absolute; inset: 0; clip-path: polygon(3% 2%, 97% 0, 100% 96%, 1% 100%); overflow: hidden; }
+.duo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .note { position: absolute; left: -6%; bottom: -10%; transform: rotate(-6deg); }
 .arrow { position: absolute; left: 14%; bottom: -3%; width: 70px; height: 50px; overflow: visible; }
 .arrow path { fill: none; stroke: var(--accent); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
